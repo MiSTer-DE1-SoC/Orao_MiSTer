@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ORAO
-Mon Jan 06 21:30:07 2020
+Thu Jan 09 07:07:49 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -162,7 +162,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 06 21:30:07 2020           ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan 09 07:07:49 2020           ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; ORAO                                            ;
 ; Top-level Entity Name           ; sys_top                                         ;
@@ -187,17 +187,17 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; sys_top            ; ORAO               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; On                 ; Off                ;
 ; Maximum processors allowed for parallel compilation                             ; All                ;                    ;
-; Preserve fewer node names                                                       ; Off                ; On                 ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
 ; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
@@ -275,21 +275,19 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 2.67        ;
-; Maximum used               ; 8           ;
+; Average used               ; 2.03        ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  23.9%      ;
-;     Processor 3            ;  23.8%      ;
-;     Processor 4            ;  23.8%      ;
-;     Processor 5            ;  23.8%      ;
-;     Processor 6            ;  23.8%      ;
-;     Processor 7            ;  23.8%      ;
-;     Processor 8            ;  23.8%      ;
+;     Processor 2            ;  20.6%      ;
+;     Processor 3            ;  20.6%      ;
+;     Processor 4            ;  20.6%      ;
+;     Processor 5            ;  20.6%      ;
+;     Processor 6            ;  20.6%      ;
 +----------------------------+-------------+
 
 
@@ -387,14 +385,14 @@ agreement for further details.
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 5766               ;
+; Estimate of Logic utilization (ALMs needed) ; 5771               ;
 ;                                             ;                    ;
 ; Combinational ALUT usage for logic          ; 9025               ;
-;     -- 7 input functions                    ; 84                 ;
-;     -- 6 input functions                    ; 1531               ;
-;     -- 5 input functions                    ; 1357               ;
-;     -- 4 input functions                    ; 1385               ;
-;     -- <=3 input functions                  ; 4668               ;
+;     -- 7 input functions                    ; 86                 ;
+;     -- 6 input functions                    ; 1542               ;
+;     -- 5 input functions                    ; 1358               ;
+;     -- 4 input functions                    ; 1382               ;
+;     -- <=3 input functions                  ; 4657               ;
 ;                                             ;                    ;
 ; Dedicated logic registers                   ; 6762               ;
 ;                                             ;                    ;
@@ -409,7 +407,7 @@ agreement for further details.
 ;                                             ;                    ;
 ; Maximum fan-out node                        ; FPGA_CLK3_50~input ;
 ; Maximum fan-out                             ; 3573               ;
-; Total fan-out                               ; 65331              ;
+; Total fan-out                               ; 65379              ;
 ; Average fan-out                             ; 3.92               ;
 +---------------------------------------------+--------------------+
 
@@ -5201,8 +5199,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; conf_str[29..28]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; conf_str[21..20]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; conf_str[13..12]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; conf_str[5..4]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; conf_str[2..1]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
+; conf_str[5..3]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; conf_str[741..740] ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[731..730] ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[728..727] ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
@@ -5304,6 +5301,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; conf_str[19..17]   ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[15..14]   ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[11..6]    ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
+; conf_str[2..1]     ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[743]      ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[742]      ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; conf_str[735]      ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
@@ -5494,8 +5492,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; conf_str[52]       ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
 ; conf_str[41]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; conf_str[16]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; conf_str[3]        ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; conf_str[0]        ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
+; conf_str[0]        ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
 ; buttons[0]         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
 ; status[31..7]      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
 ; status[5..3]       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
@@ -5774,16 +5771,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs                    ; 112      ;
 ;         4 data inputs                    ; 243      ;
 ;         5 data inputs                    ; 102      ;
-;     extend                               ; 84       ;
-;         7 data inputs                    ; 84       ;
-;     normal                               ; 5253     ;
+;     extend                               ; 86       ;
+;         7 data inputs                    ; 86       ;
+;     normal                               ; 5251     ;
 ;         0 data inputs                    ; 4        ;
 ;         1 data inputs                    ; 91       ;
-;         2 data inputs                    ; 659      ;
-;         3 data inputs                    ; 576      ;
-;         4 data inputs                    ; 1137     ;
-;         5 data inputs                    ; 1255     ;
-;         6 data inputs                    ; 1531     ;
+;         2 data inputs                    ; 651      ;
+;         3 data inputs                    ; 573      ;
+;         4 data inputs                    ; 1134     ;
+;         5 data inputs                    ; 1256     ;
+;         6 data inputs                    ; 1542     ;
 ;     shared                               ; 943      ;
 ;         0 data inputs                    ; 132      ;
 ;         1 data inputs                    ; 128      ;
@@ -5799,7 +5796,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block                       ; 525      ;
 ;                                          ;          ;
 ; Max LUT depth                            ; 46.90    ;
-; Average LUT depth                        ; 6.12     ;
+; Average LUT depth                        ; 6.11     ;
 +------------------------------------------+----------+
 
 
@@ -5818,9 +5815,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
-    Info: Processing started: Mon Jan 06 21:28:16 2020
+    Info: Processing started: Thu Jan 09 07:05:43 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ORAO -c ORAO
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sys/i2c_controller.v
     Info (12023): Found entity 1: I2C_Controller File: F:/Orao_MiSTer/sys/I2C_Controller.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file sys/i2c_av_config.v
@@ -6712,10 +6709,10 @@ Info (21057): Implemented 13826 device resources after synthesis - the final res
     Info (21064): Implemented 525 RAM segments
     Info (21062): Implemented 31 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 1415 megabytes
-    Info: Processing ended: Mon Jan 06 21:30:07 2020
-    Info: Elapsed time: 00:01:51
-    Info: Total CPU time (on all processors): 00:02:28
+    Info: Peak virtual memory: 5525 megabytes
+    Info: Processing ended: Thu Jan 09 07:07:50 2020
+    Info: Elapsed time: 00:02:07
+    Info: Total CPU time (on all processors): 00:02:14
 
 
 +------------------------------------------+

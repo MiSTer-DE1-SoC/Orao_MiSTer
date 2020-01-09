@@ -1,5 +1,5 @@
 Flow report for ORAO
-Mon Jan 06 21:34:31 2020
+Thu Jan 09 07:12:38 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -41,24 +41,24 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Mon Jan 06 21:34:04 2020           ;
+; Flow Status                     ; Successful - Thu Jan 09 07:12:03 2020           ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; ORAO                                            ;
 ; Top-level Entity Name           ; sys_top                                         ;
 ; Family                          ; Cyclone V                                       ;
-; Device                          ; 5CSXFC6D6F31C6                                  ;
+; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 5,447 / 41,910 ( 13 % )                         ;
-; Total registers                 ; 6764                                            ;
-; Total pins                      ; 145 / 499 ( 29 % )                              ;
+; Logic utilization (in ALMs)     ; 5,461 / 32,070 ( 17 % )                         ;
+; Total registers                 ; 6741                                            ;
+; Total pins                      ; 145 / 457 ( 32 % )                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 714,184 / 5,662,720 ( 13 % )                    ;
-; Total DSP Blocks                ; 31 / 112 ( 28 % )                               ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
-; Total PLLs                      ; 1 / 15 ( 7 % )                                  ;
+; Total block memory bits         ; 714,184 / 4,065,280 ( 18 % )                    ;
+; Total DSP Blocks                ; 31 / 87 ( 36 % )                                ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 6 ( 17 % )                                  ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
 +---------------------------------+-------------------------------------------------+
 
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/06/2020 21:28:17 ;
+; Start date & time ; 01/09/2020 07:05:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ORAO                ;
 +-------------------+---------------------+
@@ -79,10 +79,8 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 52235045577.157834249703600            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 255543645293592.157854994400428        ; --            ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; sys/pll_hdmi.cmp                       ; --            ; --          ; --         ;
 ; MISC_FILE                           ; sys/pll_hdmi_cfg.cmp                   ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
@@ -93,11 +91,8 @@ agreement for further details.
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; sys_top     ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; sys_top     ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; sys_top     ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PRE_FLOW_SCRIPT_FILE                ; quartus_sh:sys/build_id.tcl            ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; SAVE_DISK_SPACE                     ; Off                                    ; On            ; --          ; --         ;
 ; SMART_RECOMPILE                     ; On                                     ; Off           ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --          ; --         ;
@@ -110,11 +105,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:48     ; 2.7                     ; 1415 MB             ; 00:02:25                           ;
-; Fitter                    ; 00:03:30     ; 1.4                     ; 3676 MB             ; 00:12:18                           ;
-; Assembler                 ; 00:00:14     ; 1.0                     ; 845 MB              ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:26     ; 3.1                     ; 1505 MB             ; 00:01:10                           ;
-; Total                     ; 00:05:58     ; --                      ; --                  ; 00:16:06                           ;
+; Analysis & Synthesis      ; 00:01:59     ; 2.0                     ; 5525 MB             ; 00:02:11                           ;
+; Fitter                    ; 00:03:16     ; 1.3                     ; 7492 MB             ; 00:10:42                           ;
+; Assembler                 ; 00:00:22     ; 1.0                     ; 4965 MB             ; 00:00:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:32     ; 2.1                     ; 5599 MB             ; 00:00:53                           ;
+; Total                     ; 00:06:09     ; --                      ; --                  ; 00:14:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,10 +118,10 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; ch1              ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; ch1              ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; ch1              ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; ch1              ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; P52              ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; P52              ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; P52              ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; P52              ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
