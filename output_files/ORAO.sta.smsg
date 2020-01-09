@@ -1,1 +1,0 @@
-Warning (332174): Ignored filter at sys_top.sdc(32): *|pll|pll_inst|altera_pll_i|general[*].gpll~PLL_OUTPUT_COUNTER|divclk could not be matched with a clock File: F:/Orao_MiSTer/sys/sys_top.sdc Line: 32

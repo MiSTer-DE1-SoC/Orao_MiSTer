@@ -1,9 +1,0 @@
-Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 56 pins of 145 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
-Warning (332174): Ignored filter at sys_top.sdc(32): *|pll|pll_inst|altera_pll_i|general[*].gpll~PLL_OUTPUT_COUNTER|divclk could not be matched with a clock File: F:/Orao_MiSTer/sys/sys_top.sdc Line: 32
-Extra Info (176236): Started Fast Input/Output/OE register processing
-Extra Info (176237): Finished Fast Input/Output/OE register processing
-Extra Info (176238): Start inferring scan chains for DSP blocks
-Extra Info (176239): Inferring scan chains for DSP blocks is complete
-Extra Info (176246): Moving registers into I/O cells, DSP blocks, and RAM blocks to improve timing and density
-Extra Info (176247): Finished moving registers into I/O cells, DSP blocks, and RAM blocks
